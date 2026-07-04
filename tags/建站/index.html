@@ -42,12 +42,12 @@
         </a>
       
         <a href="/archives/"
-           class="lumen-header__nav-link is-active">
+           class="lumen-header__nav-link ">
           归档
         </a>
       
         <a href="/tags/"
-           class="lumen-header__nav-link ">
+           class="lumen-header__nav-link is-active">
           标签
         </a>
       
@@ -92,31 +92,60 @@
   </div>
 </header>
 
-  <script>
-    window.__SITE_POSTS__ = [{"path":"2026/07/04/hello-world/","title":"Hello World","date":"2026-07-04","tags":["Hexo","建站"]}];
-  </script>
   <main class="lumen-container">
-    <h1 class="archive-title">归档</h1>
-
-    <section class="heatmap-section" id="heatmap-section">
-      <h2 class="heatmap-section__title">写作热力图 · 最近 365 天</h2>
-      <div class="heatmap" id="heatmap"></div>
-      <div class="heatmap-tooltip" id="heatmap-tooltip" hidden></div>
-    </section>
-
-    <section class="archive-list">
-      <h2 class="visually-hidden">所有文章</h2>
-      
-             <h2 class="archive-year">2026 年</h2>
-             <ul class="archive-year__list">
-           
-           <li class="archive-item">
-             <time>07-04</time>
-             <a href="/2026/07/04/hello-world/">Hello World</a>
-           </li>
+    
+      <h1 class="tag-title">#建站</h1>
+      <p class="tag-count">该标签下的所有文章</p>
+      <div class="post-list">
         
-      </ul>
-    </section>
+          
+<a class="post-card lum-stagger no-cover"
+   href="/2026/07/04/hello-world/">
+  
+  <div class="post-card__body">
+    <h2 class="post-card__title">Hello World</h2>
+    <div class="post-card__meta">
+      <time datetime="2026-07-04">
+        2026-07-04
+      </time>
+      
+        <span class="post-card__cat">随笔</span>
+      
+    </div>
+    
+      <p class="post-card__excerpt">Hello World欢迎来到我的博客！
+这里是 Jeck 的个人博客，主要记录一些技术笔记和日常心得。
+关于我
+🔭 热爱技术
+📝 记录成长
+🚀 持续学习
+
+博客内容在这里你会看到：
+
+技术笔记 - 学习新技术时的踩坑记录
+工具分享 - 好用的软件和效率工具
+生活感悟 - …</p>
+    
+    
+      <div class="post-card__tags">
+        
+          <span class="post-card__tag">#Hexo</span>
+        
+          <span class="post-card__tag">#建站</span>
+        
+      </div>
+    
+  </div>
+</a>
+
+        
+      </div>
+      <nav class="pagination" aria-label="分页">
+  <span class="page-number current">1</span>
+  <span class="pagination__total">共 1 篇</span>
+</nav>
+
+    
   </main>
   
 <footer class="lumen-footer">
@@ -220,6 +249,5 @@
   
   <div class="lumen-particles" id="lumen-particles" aria-hidden="true"></div>
 
-  <script defer src="/js/heatmap.js"></script>
 </body>
 </html>

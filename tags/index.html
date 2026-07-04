@@ -42,12 +42,12 @@
         </a>
       
         <a href="/archives/"
-           class="lumen-header__nav-link is-active">
+           class="lumen-header__nav-link ">
           归档
         </a>
       
         <a href="/tags/"
-           class="lumen-header__nav-link ">
+           class="lumen-header__nav-link is-active">
           标签
         </a>
       
@@ -92,31 +92,28 @@
   </div>
 </header>
 
-  <script>
-    window.__SITE_POSTS__ = [{"path":"2026/07/04/hello-world/","title":"Hello World","date":"2026-07-04","tags":["Hexo","建站"]}];
-  </script>
   <main class="lumen-container">
-    <h1 class="archive-title">归档</h1>
-
-    <section class="heatmap-section" id="heatmap-section">
-      <h2 class="heatmap-section__title">写作热力图 · 最近 365 天</h2>
-      <div class="heatmap" id="heatmap"></div>
-      <div class="heatmap-tooltip" id="heatmap-tooltip" hidden></div>
-    </section>
-
-    <section class="archive-list">
-      <h2 class="visually-hidden">所有文章</h2>
-      
-             <h2 class="archive-year">2026 年</h2>
-             <ul class="archive-year__list">
-           
-           <li class="archive-item">
-             <time>07-04</time>
-             <a href="/2026/07/04/hello-world/">Hello World</a>
-           </li>
+    
+      <h1 class="tag-title">标签</h1>
+      <p class="tag-count">共 2 个标签</p>
+      <div class="tag-cloud" id="tag-cloud">
         
-      </ul>
-    </section>
+          <a class="tag-cloud__item"
+             href="/tags/Hexo/"
+             data-weight="1">
+            Hexo
+            <span class="tag-cloud__count">1</span>
+          </a>
+        
+          <a class="tag-cloud__item"
+             href="/tags/%E5%BB%BA%E7%AB%99/"
+             data-weight="1">
+            建站
+            <span class="tag-cloud__count">1</span>
+          </a>
+        
+      </div>
+    
   </main>
   
 <footer class="lumen-footer">
@@ -220,6 +217,5 @@
   
   <div class="lumen-particles" id="lumen-particles" aria-hidden="true"></div>
 
-  <script defer src="/js/heatmap.js"></script>
 </body>
 </html>

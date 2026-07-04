@@ -1,0 +1,16 @@
+/* Lumen — 暗色模式补充样式 */
+.dark-mode ::selection { background: rgba(255, 255, 255, 0.15); }
+
+.dark-mode .lumen-header.is-scrolled {
+  background: color-mix(in oklab, var(--bg), transparent 30%);
+}
+
+.dark-mode .post-body pre { background: #16181d; }
+.dark-mode .hljs { color: #c9d1d9; }
+.dark-mode .hljs-comment, .dark-mode .hljs-quote { color: #8b949e; }
+.dark-mode .hljs-keyword, .dark-mode .hljs-selector-tag { color: #ff7b72; }
+.dark-mode .hljs-string, .dark-mode .hljs-attr { color: #a5d6ff; }
+.dark-mode .hljs-number, .dark-mode .hljs-literal { color: #79c0ff; }
+.dark-mode .hljs-function, .dark-mode .hljs-title { color: #d2a8ff; }
+.dark-mode .hljs-built_in, .dark-mode .hljs-builtin-name { color: #ffa657; }
+.dark-mode .hljs-variable, .dark-mode .hljs-params { color: #c9d1d9; }

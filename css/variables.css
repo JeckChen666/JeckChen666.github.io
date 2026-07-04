@@ -1,0 +1,52 @@
+/* Lumen 主题 — 全局 CSS 变量
+ * 浅色为默认；`.dark-mode` 类开启时切换深色变量。
+ * 所有强调色（accent）通过 :root 与 .dark-mode 各自定义。
+ */
+
+:root {
+  /* 字体 */
+  --font-sans: -apple-system, BlinkMacSystemFont, "PingFang SC",
+               "Microsoft YaHei", "Segoe UI", Roboto, sans-serif;
+
+  /* 主题色（默认小米橙 — 由 JS 切换为不同预设时可改写） */
+  --accent: #FF6700;
+  --accent-30: rgba(255, 103, 0, 0.30);
+  --accent-60: rgba(255, 103, 0, 0.60);
+
+  /* 浅色模式调色 */
+  --bg:        #ffffff;
+  --bg-soft:   #f7f7f8;
+  --bg-card:   #ffffff;
+  --text:      #1a1a1a;
+  --text-soft: #555555;
+  --text-mute: #888888;
+  --border:    #e5e5e7;
+  --border-soft: #eeeeef;
+  --shadow:    0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+
+  /* 字体大小 */
+  --fs-base: 16px;
+  --fs-sm: 14px;
+  --fs-lg: 18px;
+  --fs-xl: 22px;
+  --fs-h2: 24px;
+
+  /* 间距 */
+  --gap: 24px;
+  --container-width: 1080px;
+  --content-width: 720px;
+  --aside-width: 240px;
+  --radius: 8px;
+}
+
+.dark-mode {
+  --bg:        #15161a;
+  --bg-soft:   #1d1f25;
+  --bg-card:   #1d1f25;
+  --text:      #e8e8e8;
+  --text-soft: #b8b8b8;
+  --text-mute: #808086;
+  --border:    #2a2c33;
+  --border-soft: #20222880;
+  --shadow:    0 1px 3px rgba(0,0,0,0.4), 0 1px 2px rgba(0,0,0,0.3);
+}
