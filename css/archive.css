@@ -14,7 +14,55 @@
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
-.heatmap { display: block; overflow-x: auto; padding-bottom: 4px; }
+/* ---- 热力图整体 ---- */
+.heatmap { overflow-x: auto; padding-bottom: 4px; }
+
+/* 主行：星期列 + 内容区 */
+.heatmap__main-row {
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+}
+
+/* ---- 星期标签（左侧列） ---- */
+.heatmap__days {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  padding-top: 22px; /* 对齐月份行高度 + 间距 */
+}
+.heatmap__days span {
+  display: block;
+  height: 14px;        /* 和单元格行高一致（12px + 2px margin） */
+  line-height: 14px;
+  font-size: 10px;
+  color: var(--text-mute);
+}
+
+/* ---- 内容区（月份行 + 格子） ---- */
+.heatmap__cell-area {
+  display: flex;
+  flex-direction: column;
+}
+
+/* 月份标签行 */
+.heatmap__months {
+  display: flex;
+  height: 18px;
+  margin-bottom: 4px;
+}
+.heatmap__month {
+  font-size: 10px;
+  color: var(--text-mute);
+  line-height: 18px;
+}
+
+/* 格子容器 */
+.heatmap__cells {
+  line-height: 0;
+}
+
+/* ---- 单元格 ---- */
 .heatmap__cell {
   width: 12px; height: 12px;
   border-radius: 2px;
@@ -23,15 +71,40 @@
   cursor: default;
   transition: transform 0.15s;
 }
+.heatmap__cell--empty { visibility: hidden; }
 .heatmap__cell[data-level="1"] { background: color-mix(in oklab, var(--accent), transparent 70%); }
 .heatmap__cell[data-level="2"] { background: color-mix(in oklab, var(--accent), transparent 40%); }
 .heatmap__cell[data-level="3"] { background: var(--accent); }
-.heatmap__cell:hover { transform: scale(1.4); outline: 1px solid var(--accent); }
+.heatmap__cell:hover { transform: scale(1.4); outline: 1px solid var(--accent); z-index: 1; position: relative; }
 
+/* ---- 图例 ---- */
+.heatmap__legend {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  margin-top: 8px;
+  padding-right: 2px;
+}
+.heatmap__legend .heatmap__cell {
+  cursor: default;
+}
+.heatmap__legend .heatmap__cell:hover {
+  transform: none;
+  outline: none;
+}
+.heatmap__legend-label {
+  font-size: 10px;
+  color: var(--text-mute);
+  padding: 0 2px;
+}
+
+/* ---- Tooltip ---- */
 .heatmap-tooltip {
   position: fixed; pointer-events: none; z-index: 200;
   padding: 6px 10px; background: var(--text); color: var(--bg);
   font-size: 12px; border-radius: 4px; max-width: 240px;
+  white-space: nowrap;
 }
 .heatmap-tooltip[hidden] { display: none; }
 
