@@ -1,0 +1,27 @@
+@import "./variables.css";
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html, body {
+  margin: 0; padding: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  font-size: var(--fs-base);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; text-underline-offset: 3px; }
+
+::selection { background: var(--accent-30); color: inherit; }
+
+img { max-width: 100%; display: block; }
+
+button, input { font-family: inherit; font-size: inherit; color: inherit; }
+button { cursor: pointer; background: none; border: none; }
+
+@media (max-width: 768px) {
+  html, body { font-size: 15px; }
+}
