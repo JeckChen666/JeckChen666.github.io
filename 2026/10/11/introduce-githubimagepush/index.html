@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Jeck&#39;s Blog</title>
+<meta name="description" content="" />
+<link rel="icon" type="image/png" href="/img/favicon-32.png" sizes="32x32" />
+<link rel="apple-touch-icon" href="/img/apple-touch-icon.png" />
+<link rel="stylesheet" href="/css/main.css" />
+<script defer src="/js/header-scroll.js"></script>
+<script defer src="/js/code-copy.js"></script>
+<script defer src="/js/toc-active.js"></script>
+<script defer src="/js/related-posts.js"></script>
+<script defer src="/js/theme-switcher.js"></script>
+<script src="/js/dark-mode.js"></script>
+<script defer src="/js/scroll-reveal.js"></script>
+<script src="/vendor/tsparticles.bundle.min.js"></script>
+<script defer src="/js/ts-particles-init.js"></script>
+<script src="/vendor/fuse.min.js"></script>
+<script defer src="/js/search.js"></script>
+
+<meta name="generator" content="Hexo 8.1.1"></head>
+<body>
+  
+<header class="lumen-header" id="lumen-header">
+  <div class="lumen-header__inner">
+    <div class="lumen-header__brand">
+      <a href="/" class="lumen-header__logo">
+        
+          <img class="lumen-header__logo-img" src="/img/avatar-128.png" alt="Jeck Chen" />
+        
+        <span class="lumen-header__logo-text">Jeck&#39;s Blog</span>
+      </a>
+    </div>
+
+    <nav class="lumen-header__nav" aria-label="主导航">
+      
+        <a href="/"
+           class="lumen-header__nav-link ">
+          首页
+        </a>
+      
+        <a href="/archives/"
+           class="lumen-header__nav-link ">
+          归档
+        </a>
+      
+        <a href="/tags/"
+           class="lumen-header__nav-link ">
+          标签
+        </a>
+      
+        <a href="/about/"
+           class="lumen-header__nav-link ">
+          关于
+        </a>
+      
+    </nav>
+
+    <div class="lumen-header__tools">
+      
+        <button class="lumen-tool-btn" data-action="open-search" aria-label="搜索">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+        </button>
+      
+      <button class="lumen-tool-btn" data-action="open-theme" aria-label="主题色">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"/><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"/><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"/><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"/></svg>
+      </button>
+      
+        
+          <a target="_blank" href="https://github.com/JeckChen666" class="lumen-tool-btn" rel="me noopener" aria-label="github">
+            
+              <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.4 3-.405 1.02.005 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+            
+          </a>
+        
+          <a href="mailto:your@email.com" class="lumen-tool-btn" rel="me" aria-label="email">
+            
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            
+          </a>
+        
+      
+      <button class="lumen-tool-btn" data-action="toggle-dark" aria-label="切换深色">
+        <svg class="icon icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+      </button>
+      
+        <img class="lumen-header__avatar" src="/img/avatar-128.png" alt="Jeck Chen" />
+      
+    </div>
+  </div>
+</header>
+
+  <main class="lumen-container">
+    <article class="lumen-with-aside">
+      <div class="lumen-with-aside__main post-content">
+        <header class="post-header">
+          <h1 class="post-header__title">GithubImagePush：把 GitHub 仓库变成你的免费图床</h1>
+          <div class="post-header__meta">
+            <time datetime="2026-10-11">2026-10-11</time>
+            
+              <span>· 开源项目</span>
+            
+            
+              <span class="post-header__tags">
+                
+                  <a href="/tags/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/">#开源项目</a>
+                
+                  <a href="/tags/%E5%9B%BE%E5%BA%8A/">#图床</a>
+                
+                  <a href="/tags/GitHub/">#GitHub</a>
+                
+                  <a href="/tags/Go/">#Go</a>
+                
+              </span>
+            
+          </div>
+        </header>
+        <div class="post-body">
+          <h2 id="写博客的人，都绕不开「图片放哪」这个的问题"><a href="#写博客的人，都绕不开「图片放哪」这个的问题" class="headerlink" title="写博客的人，都绕不开「图片放哪」这个的问题"></a>写博客的人，都绕不开「图片放哪」这个的问题</h2><p>在 Markdown 里写技术文章，截图、配图、示意图片是刚需。放在本地？换台电脑链接全断。放在免费图床？担心哪天跑路。买个对象存储？又要付钱、要备案、要配 CDN。</p>
+<p>其实我们每个人手里都握着一个<strong>免费、稳定、全球可达</strong>的存储——GitHub 仓库。GithubImagePush 要做的事很简单：<strong>给 GitHub 仓库套一层友好的 Web 服务，让你像用专业图床一样，把图片丢进 GitHub，拿回直链。</strong></p>
+<p><a target="_blank" rel="noopener" href="https://github.com/JeckChen666/GithubImagePush/actions/workflows/ci.yml"><img src="https://github.com/JeckChen666/GithubImagePush/actions/workflows/ci.yml/badge.svg" alt="CI"></a></p>
+<h2 id="它长什么样"><a href="#它长什么样" class="headerlink" title="它长什么样"></a>它长什么样</h2><p>上传页支持拖拽、多选、<code>Ctrl+V</code> 粘贴，带进度条：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/JeckChen666/GithubImagePush@main/docs/upload.png" alt="上传页面"></p>
+<p>传完不是完事——还有完整的图库管理：目录导航、缩略图网格、详情弹层里 Markdown &#x2F; HTML &#x2F; BBCode 各格式链接一键复制：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/JeckChen666/GithubImagePush@main/docs/gallery.png" alt="图库管理"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/JeckChen666/GithubImagePush@main/docs/detail.png" alt="图片详情"></p>
+<h2 id="为什么值得一试"><a href="#为什么值得一试" class="headerlink" title="为什么值得一试"></a>为什么值得一试</h2><h3 id="1-单二进制，裸服也能跑"><a href="#1-单二进制，裸服也能跑" class="headerlink" title="1. 单二进制，裸服也能跑"></a>1. 单二进制，裸服也能跑</h3><p>Go 标准库 HTTP + <code>embed</code> 内嵌前端，编译出来就是一个文件，没有任何运行时依赖。<code>scp</code> 到服务器、注册一个 systemd 服务，部署就结束了。一台最低配的云主机（1 核 1G）绰绰有余——本站服务器上的实例常驻内存只有个位数 MB。</p>
+<h3 id="2-上传体验对齐商业图床"><a href="#2-上传体验对齐商业图床" class="headerlink" title="2. 上传体验对齐商业图床"></a>2. 上传体验对齐商业图床</h3><ul>
+<li><strong>三种输入</strong>：multipart 表单、JSON base64（自动识别 <code>data:image/png;base64,</code> 前缀）、网页拖拽&#x2F;粘贴</li>
+<li><strong>一次上传，多种直链</strong>：<code>raw</code> 直链、jsDelivr CDN、GitHub 页面链接、自定义域名（支持 <code>{path}</code> 占位符），全部同时返回</li>
+<li><strong>命名与冲突可控</strong>：默认时间戳命名防同名，也可保留原名；同名可选报错或覆盖</li>
+</ul>
+<h3 id="3-鉴权认真做过的"><a href="#3-鉴权认真做过的" class="headerlink" title="3. 鉴权认真做过的"></a>3. 鉴权认真做过的</h3><p>多 Key 管理（方便分发与吊销）、常量时间比较防时序攻击、按 IP 限速防暴力枚举。v1.1.0 起还有了独立登录页，未登录访问自动跳转，Key 不再常驻页面角落。</p>
+<h3 id="4-兼容-PicGo-生态"><a href="#4-兼容-PicGo-生态" class="headerlink" title="4. 兼容 PicGo 生态"></a>4. 兼容 PicGo 生态</h3><p><code>POST /upload</code> 输出 PicGo 标准的 <code>{success, result: [...]}</code> 格式，Typora、PicGo 等工具的自定义 Web Uploader 直接可用，老工具无缝迁移。</p>
+<h3 id="5-给-AI-Agent-留了门"><a href="#5-给-AI-Agent-留了门" class="headerlink" title="5. 给 AI Agent 留了门"></a>5. 给 AI Agent 留了门</h3><p>内置 <code>GET /api/skill</code> 接口和网页版「Skill 接入」指南：鉴权后返回一份含服务地址、Key 与完整安装步骤的 Markdown。把它丢给你的 AI Agent，它自己就能完成配置——从此「帮我把这张图传到图床」变成一句话的事。</p>
+<h2 id="快速开始"><a href="#快速开始" class="headerlink" title="快速开始"></a>快速开始</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 1. 下载对应平台的二进制（macOS / Linux / Windows）</span></span><br><span class="line"><span class="comment">#    https://github.com/JeckChen666/GithubImagePush/releases</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 2. 准备一个 GitHub 仓库 + Personal Access Token（Contents 读写权限）</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 3. 改配置、启动</span></span><br><span class="line"><span class="built_in">cp</span> config.example.yaml config.yaml</span><br><span class="line">vim config.yaml   <span class="comment"># 填 token、repo、auth.keys</span></span><br><span class="line">./github-image-push</span><br></pre></td></tr></table></figure>
+
+<p>浏览器打开，右上角（v1.1.0 起在登录页）填入 Key，拖一张图进去——直链到手。</p>
+<h2 id="我的用法"><a href="#我的用法" class="headerlink" title="我的用法"></a>我的用法</h2><p>本站的写作工作流是自托管的 <a target="_blank" rel="noopener" href="https://github.com/JeckChen666/JcWorkSpace">JcWorkSpace</a>：编辑器里粘贴或拖入图片时，它自动把图传到 GithubImagePush 并插入直链——写文章的手感与大型写作平台无异，图片却稳稳落在自己的 GitHub 仓库里。这篇文章的发布，同样只用了它网页上的两个按钮：Git 推送、构建发布。</p>
+<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>GithubImagePush 是 MIT 协议的开源项目，hexo-deployer-git 同款思路，但把它做成了常驻服务：</p>
+<ul>
+<li>项目地址：<a target="_blank" rel="noopener" href="https://github.com/JeckChen666/GithubImagePush">https://github.com/JeckChen666/GithubImagePush</a></li>
+<li>觉得有用的话，欢迎 <strong>Star</strong>；有问题或想法，Issue 区见</li>
+</ul>
+
+        </div>
+        
+<section class="post-end">
+  <div class="post-end__license">
+    <p>
+      本文采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="license noopener">CC BY-NC-SA 4.0</a> 协议。
+      转载请保留原文链接：<a href="/2026/10/11/introduce-githubimagepush/">/2026/10/11/introduce-githubimagepush/</a>
+    </p>
+  </div>
+
+  <nav class="post-end__nav" aria-label="上下篇">
+    
+      <span class="post-end__nav-placeholder"></span>
+    
+
+    
+      <a class="post-end__next" href="/2026/07/04/hello-world/">
+        <span class="post-end__nav-label">下一篇 →</span>
+        <span class="post-end__nav-title">Hello World</span>
+      </a>
+    
+  </nav>
+</section>
+
+      </div>
+      <aside class="lumen-with-aside__aside post-aside">
+        
+
+
+        <aside class="related-posts" aria-label="推荐阅读">
+  <h3 class="related-posts__title">推荐阅读</h3>
+  <div class="related-posts__list" id="related-posts-list"></div>
+</aside>
+
+      </aside>
+    </article>
+  </main>
+  
+<footer class="lumen-footer">
+  <p class="lumen-footer__line">© 2026 Jeck Chen · CC BY-NC-SA 4.0</p>
+  <p class="lumen-footer__line">
+    Built with ❤️ using <a href="https://github.com/JeckChen666/lumen" target="_blank" rel="noopener">Lumen</a> v1.0.0
+    · Hosted on GitHub Pages
+  </p>
+  
+    <p class="lumen-footer__line busuanzi">
+      <span id="busuanzi_container_site_pv">
+        本站总访问量 <span id="busuanzi_value_site_pv">…</span> 次
+      </span>
+      <span id="busuanzi_container_site_uv" style="margin-left: 12px;">
+        访客 <span id="busuanzi_value_site_uv">…</span> 人
+      </span>
+    </p>
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  
+</footer>
+  <div class="theme-panel" id="theme-panel" hidden>
+  <div class="theme-panel__header">
+    <span class="theme-panel__title">主题色</span>
+    <button class="theme-panel__close" data-action="close-theme" aria-label="关闭">×</button>
+  </div>
+  <div class="theme-panel__swatches">
+    
+      <button class="theme-panel__swatch"
+              data-action="set-accent"
+              data-value="#FF6700"
+              style="--sw: #FF6700"
+              title="小米橙"
+              aria-label="小米橙"></button>
+    
+      <button class="theme-panel__swatch"
+              data-action="set-accent"
+              data-value="#1971C2"
+              style="--sw: #1971C2"
+              title="海蓝"
+              aria-label="海蓝"></button>
+    
+      <button class="theme-panel__swatch"
+              data-action="set-accent"
+              data-value="#2F9E44"
+              style="--sw: #2F9E44"
+              title="翡翠绿"
+              aria-label="翡翠绿"></button>
+    
+      <button class="theme-panel__swatch"
+              data-action="set-accent"
+              data-value="#7048E8"
+              style="--sw: #7048E8"
+              title="葡萄紫"
+              aria-label="葡萄紫"></button>
+    
+      <button class="theme-panel__swatch"
+              data-action="set-accent"
+              data-value="#E03131"
+              style="--sw: #E03131"
+              title="玫瑰红"
+              aria-label="玫瑰红"></button>
+    
+      <button class="theme-panel__swatch"
+              data-action="set-accent"
+              data-value="#F59F00"
+              style="--sw: #F59F00"
+              title="落日黄"
+              aria-label="落日黄"></button>
+    
+      <button class="theme-panel__swatch"
+              data-action="set-accent"
+              data-value="#EC4899"
+              style="--sw: #EC4899"
+              title="樱花粉"
+              aria-label="樱花粉"></button>
+    
+      <button class="theme-panel__swatch"
+              data-action="set-accent"
+              data-value="#0EA5E9"
+              style="--sw: #0EA5E9"
+              title="天青色"
+              aria-label="天青色"></button>
+    
+  </div>
+  <label class="theme-panel__custom">
+    <span>自定义</span>
+    <input type="text" id="theme-custom-color" placeholder="#FF6700" maxlength="7" />
+  </label>
+</div>
+
+  
+<div class="search-panel" id="search-panel" hidden>
+  <div class="search-panel__header">
+    <input class="search-panel__input" id="search-input"
+           type="search" placeholder="搜索文章…" autocomplete="off" />
+    <button class="search-panel__close" data-action="close-search" aria-label="关闭">×</button>
+  </div>
+  <div class="search-panel__results" id="search-results"></div>
+</div>
+
+  
+  <div class="lumen-particles" id="lumen-particles" aria-hidden="true"></div>
+
+  <script>
+    window.__POST_TAGS__ = ["开源项目","图床","GitHub","Go"];
+    window.__SITE_POSTS__ = [{"path":"2026/07/04/hello-world/","title":"Hello World","date":"2026-07-04","tags":["Hexo","建站"]},{"path":"2026/10/11/introduce-githubimagepush/","title":"GithubImagePush：把 GitHub 仓库变成你的免费图床","date":"2026-10-11","tags":["开源项目","图床","GitHub","Go"]}];
+    window.__POST_PATH__ = "2026/10/11/introduce-githubimagepush/";
+  </script>
+</body>
+</html>
